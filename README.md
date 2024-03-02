@@ -1,31 +1,47 @@
-# React + TypeScript + Vite
+# Classes de CNAE - IBGE
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+Este projeto envolve o consumo de uma API que disponibiliza uma lista de classes de CNAE (Classificação Nacional de Atividades Econômicas) juntamente com suas descrições. As classes de CNAE funcionam como categorias que organizam diferentes tipos de atividades econômicas. Ao listar esses CNAEs e mostrar suas descrições, o projeto visa fornecer uma melhor compreensão das várias áreas de atividade econômica. Isso permite aos usuários explorar e entender mais sobre os diferentes setores da economia, facilitando análises e tomadas de decisão informadas.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+API utilizada : https://servicodados.ibge.gov.br/api/docs/
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+# Siga os seguintes passos para instalação e execução do projeto:
 
-- Configure the top-level `parserOptions` property like this:
+ Clone o projeto : 
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```bash
+git clone https://github.com/AronNascimento2/cnae_IBGE.git
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
-# cnae_IBGE
+Entre na pasta do projeto clonado:
+
+```bash
+cd cnae_IBGE
+```
+Faça a instalação das dependências:
+```bash
+npm install
+```
+rode o projeto:
+```bash
+npm run dev
+```
+
+# Experimente o Classes de CNAE - IBGE !!!
+Este projeto foi hospedado na vercel [clique aqui](https://cnae-ibge.vercel.app/) para testa-lo
+
+
+# Entendendo a ferramenta !
+
+Voce pode Fazer uma busca digitando a Descrição do CNAE atraves do input de busca.
+
+![](https://github.com/AronNascimento2/cnae_IBGE/blob/main/public/inputsearch.png)
+
+Ou clicando em um dos componentes da listagem.
+
+![](https://github.com/AronNascimento2/cnae_IBGE/blob/main/public/buttoncnae.png)
+
+Após clicar no componente irá abrir um modal com mais detalhes sobre o CNAE escolhido.
+
+![](https://github.com/AronNascimento2/cnae_IBGE/blob/main/public/modal.png)
